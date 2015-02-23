@@ -1,32 +1,30 @@
-/*section height - 100% of the viewport, resized on page load*/
 @import url(http://fonts.googleapis.com/css?family=Capriola);
 
 header {
-    height: 10%;
+    height: 100px;
     width: 100%;
 }
 footer {
-    height: 10%;
+    height: 15%;
     width: 100%;
 }
 #gallery {
-    height: 67%;
+    height: 100%;
     width: 100%;
 }
 .homeSlide {
     height: 100%;
     width: 100%;
-    z-index: 1000;
 }
-.hsContainer {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    opacity: 0;
-}
+/*.hsContainer {*/
+    /*display: table;*/
+    /*table-layout: fixed;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*opacity: 0;*/
+/*}*/
 /*.hsContent {*/
     /*max-width: 450px;*/
     /*margin: -150px auto 0 auto;*/
@@ -41,24 +39,28 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
     height: 100%;
     width: 100%;
 }
 #slide-1 .bcg {
     background-image: url("images/bcg_slide-1.jpg");
+    background-size: contain;
 }
 #slide-2 .bcg {
     background-image: url("images/bcg_slide-2.jpg");
+    background-size: contain;
 }
 #slide-3 .bcg {
     background-image: url("images/bcg_slide-3.jpg");
+    background-size: contain;
 }
 #slide-4 .bcg {
     background-image: url("images/bcg_slide-4.jpg");
+    background-size: contain;
 }
 #slide-5 .bcg {
     background-image: url("images/bcg_slide-5.jpg");
+    background-size: contain;
 }
 #scrollerToTop {
     width: 40px;
@@ -91,21 +93,10 @@ footer {
 }
 #cssmenu {
     width: 100%;
-    height: 59px;
+    height: 60px;
     padding-bottom: 4px;
 }
-#cssmenu.align-right {
-    float: right;
-}
-#cssmenu.align-right ul li {
-    float: right;
-    margin-right: 0;
-    margin-left: 4px;
-}
-#cssmenu.align-right ul li:first-child,
-#cssmenu.align-right ul li:first-child > a {
-    border-bottom-right-radius: 3px;
-}
+
 #cssmenu #bg-one,
 #cssmenu #bg-two,
 #cssmenu #bg-three,
@@ -123,7 +114,6 @@ footer {
 #cssmenu #bg-two {
     height: 59px;
     z-index: 2;
-    background: url('images/bg.png');
 }
 #cssmenu #bg-three {
     bottom: 4px;
@@ -141,7 +131,6 @@ footer {
     bottom: 4px;
     height: 55px;
     z-index: 4;
-    background: url('images/bg.png');
 }
 #cssmenu ul {
     height: 59px;
@@ -196,7 +185,7 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9000
+    /*z-index: 9000*/
 }
 .entry-footer .inner {
     text-align: left;
@@ -210,20 +199,20 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 9000
+    /*z-index: 9000;*/
 }
 
 #home-screen {
     border: 2px solid;
     /*height: auto;*/
     width: 100%;
-    margin-top: 8%;
+    margin-top: 100px;
     /*display: inline-block;*/
     /*margin-bottom: 20%;*/
 }
 
 #home-screen h1 {
-    margin-top: 200px;
+    margin-top: 100px;
     /*position: absolute;*/
     /*display: block;*/
 }
@@ -231,58 +220,70 @@ footer {
 
 /*responsive*/
 
-.claerfix:before,
-.claerfix:after {
-    content: " ";
-    display: table;
-}
-.claerfix:after {
-    clear: both;
-}
-.claerfix {
-    *zoom: 1;
-}
-#pull {
-    visibility: hidden;
-}
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 768px){
 
-    #pull {
-        visibility: visible;
-    }
+
     nav {
         border-bottom: 0;
     }
-    nav ul {
-        display: none;
-        height: auto;
-    }
+    /*nav ul {*/
+        /*display: none;*/
+        /*height: auto;*/
+    /*}*/
+    /*nav li {*/
+        /*display: block;*/
+        /*float: none;*/
+        /*width: 100%;*/
+    /*}*/
     nav a#pull {
         display: block;
         background-color: #283744;
         width: 100%;
         position: relative;
     }
-    nav a#pull {
-        content: "";
-        background: url("images/nav-icon.png") no-repeat;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        position: absolute;
-        right: 15px;
-        top: 10px;
-    }
+    /*nav a#pull {*/
+        /*content: "";*/
+        /*background: url("images/nav-icon.png") no-repeat;*/
+        /*width: 30px;*/
+        /*height: 30px;*/
+        /*display: inline-block;*/
+        /*position: absolute;*/
+        /*right: 15px;*/
+        /*top: 10px;*/
+    /*}*/
 }
 
 @media only screen and (max-width: 320px){
-    nav li {
-        display: block;
-        float: none;
-        width: 100%;
-    }
-    nav li a {
-        border-bottom: 1px solid #576979;
-    }
+    /*nav li {*/
+        /*display: block;*/
+        /*float: none;*/
+        /*width: 100%;*/
+    /*}*/
+    /*nav li a {*/
+        /*border-bottom: 1px solid #576979;*/
+    /*}*/
 }
+/*#small-menu ul {*/
+    /*list-style: none;*/
+/*}*/
+/*#small-menu > ul  li{*/
+    /*display: inline-block;*/
+    /*width: 100px;*/
+    /*cursor: pointer;*/
+/*}*/
+/*#small-menu ul:hover a{*/
+    /*visibility: visible;*/
+    /*color: #0000FF;*/
+
+/*}*/
+/*#small-menu a {*/
+    /*text-decoration: none;*/
+    /*visibility: hidden;*/
+/*}*/
+/*#small-menu a:visited {*/
+    /*color: #0000FF;*/
+/*}*/
+/*#small-menu a {*/
+    /*color: #0000FF;*/
+/*}*/

@@ -25,6 +25,25 @@
 
     $( document ).ready(function() {
         $('#cssmenu').prepend('<div id="bg-one"></div><div id="bg-two"></div><div id="bg-three"></div><div id="bg-four"></div>');
+
+        //Store the references outside the event handler:
+        var $window = $(window);
+
+        function checkWidth() {
+            var windowsize = $window.width();
+            if (windowsize < 440) {
+
+                $("#cssmenu").hide().fadeOut();
+            }else {
+                $("#cssmenu").show().fadeIn();
+            }
+        }
+        // Execute on load
+        checkWidth();
+        // Bind event listener
+        $(window).resize(checkWidth);
+
+
     });
     $("li").click(function(){
         // If this isn't already active
@@ -45,10 +64,12 @@ $(function(){
     $('#gallery-bth').click(function(){
         $("#gallery").show().fadeIn();
         $("#home-screen").hide().fadeOut();
+        $("footer").hide().fadaOut();
 
     });
     $('#home-bth').click(function(){
         $("#gallery").hide().fadeOut();
         $("#home-screen").show().fadeIn();
+        $("footer").show().fadeIn(0);
     });
 });
