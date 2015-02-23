@@ -1,0 +1,288 @@
+/*section height - 100% of the viewport, resized on page load*/
+@import url(http://fonts.googleapis.com/css?family=Capriola);
+
+header {
+    height: 10%;
+    width: 100%;
+}
+footer {
+    height: 10%;
+    width: 100%;
+}
+#gallery {
+    height: 67%;
+    width: 100%;
+}
+.homeSlide {
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+.hsContainer {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+}
+/*.hsContent {*/
+    /*max-width: 450px;*/
+    /*margin: -150px auto 0 auto;*/
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+    /*color: #ebebeb;*/
+    /*padding: 0 8%;*/
+    /*text-align: center;*/
+
+/*}*/
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+#slide-1 .bcg {
+    background-image: url("images/bcg_slide-1.jpg");
+}
+#slide-2 .bcg {
+    background-image: url("images/bcg_slide-2.jpg");
+}
+#slide-3 .bcg {
+    background-image: url("images/bcg_slide-3.jpg");
+}
+#slide-4 .bcg {
+    background-image: url("images/bcg_slide-4.jpg");
+}
+#slide-5 .bcg {
+    background-image: url("images/bcg_slide-5.jpg");
+}
+#scrollerToTop {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: url("images/uparrow.png") 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 999999;
+    display: none;
+}
+
+/* Navigation menu*/
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    font-family: Capriola, Helvetica, sans-serif;
+}
+#cssmenu {
+    width: 100%;
+    height: 59px;
+    padding-bottom: 4px;
+}
+#cssmenu.align-right {
+    float: right;
+}
+#cssmenu.align-right ul li {
+    float: right;
+    margin-right: 0;
+    margin-left: 4px;
+}
+#cssmenu.align-right ul li:first-child,
+#cssmenu.align-right ul li:first-child > a {
+    border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one,
+#cssmenu #bg-two,
+#cssmenu #bg-three,
+#cssmenu #bg-four {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one {
+    height: 10px;
+    background: #0f71ba;
+}
+#cssmenu #bg-two {
+    height: 59px;
+    z-index: 2;
+    background: url('images/bg.png');
+}
+#cssmenu #bg-three {
+    bottom: 4px;
+    height: 55px;
+    z-index: 3;
+    background: #222222;
+    background: -moz-linear-gradient(top, #555555 0%, #222222 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555555), color-stop(100%, #222222));
+    background: -webkit-linear-gradient(top, #555555 0%, #222222 100%);
+    background: -o-linear-gradient(top, #555555 0%, #222222 100%);
+    background: -ms-linear-gradient(top, #555555 0%, #222222 100%);
+    background: linear-gradient(to bottom, #555555 0%, #222222 100%);
+}
+#cssmenu #bg-four {
+    bottom: 4px;
+    height: 55px;
+    z-index: 4;
+    background: url('images/bg.png');
+}
+#cssmenu ul {
+    height: 59px;
+}
+#cssmenu ul li {
+    float: left;
+    margin-right: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    z-index: 5;
+}
+#cssmenu ul li a {
+    padding: 24px 30px 20px 30px;
+    margin-bottom: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #eeeeee;
+    font-size: 15px;
+    text-decoration: none;
+}
+#cssmenu ul li:first-child,
+#cssmenu ul li:first-child > a {
+    border-bottom-left-radius: 3px;
+}
+#cssmenu ul li:hover,
+#cssmenu ul li.active {
+    background: #0f71ba;
+    background: -moz-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3fa4f0), color-stop(100%, #0f71ba));
+    background: -webkit-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+    background: -o-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+    background: -ms-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+    background: linear-gradient(to bottom, #3fa4f0 0%, #0f71ba 100%);
+}
+#cssmenu ul li a:hover,
+#cssmenu ul li.active > a {
+    background: url('images/bg.png');
+    color: #ffffff;
+}
+
+
+/*HEADER AND FOOTER */
+.entry-header .inner {
+    text-align: left;
+    margin: 0 auto 20px auto;
+    width: 800px;
+}
+.entry-header {
+    padding-top: 0px;
+    background-color: #fff;
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9000
+}
+.entry-footer .inner {
+    text-align: left;
+    /*margin: 0 auto 20px auto;*/
+    width: 800px;
+}
+.entry-footer {
+    padding-top: 20px;
+    background-color: #fff;
+    width:100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9000
+}
+
+#home-screen {
+    border: 2px solid;
+    /*height: auto;*/
+    width: 100%;
+    margin-top: 8%;
+    /*display: inline-block;*/
+    /*margin-bottom: 20%;*/
+}
+
+#home-screen h1 {
+    margin-top: 200px;
+    /*position: absolute;*/
+    /*display: block;*/
+}
+
+
+/*responsive*/
+
+.claerfix:before,
+.claerfix:after {
+    content: " ";
+    display: table;
+}
+.claerfix:after {
+    clear: both;
+}
+.claerfix {
+    *zoom: 1;
+}
+#pull {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 480px){
+
+    #pull {
+        visibility: visible;
+    }
+    nav {
+        border-bottom: 0;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #283744;
+        width: 100%;
+        position: relative;
+    }
+    nav a#pull {
+        content: "";
+        background: url("images/nav-icon.png") no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav li a {
+        border-bottom: 1px solid #576979;
+    }
+}
