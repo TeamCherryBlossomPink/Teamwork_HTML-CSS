@@ -188,7 +188,6 @@ footer {
     /*z-index: 9000*/
 }
 .entry-footer .inner {
-    text-align: left;
     /*margin: 0 auto 20px auto;*/
     width: 800px;
 }
@@ -287,3 +286,20 @@ footer {
 /*#small-menu a {*/
     /*color: #0000FF;*/
 /*}*/
+
+body footer{
+    position:fixed;
+    background-color: #0f71ba !important;
+    color:white;
+    width:100%;
+    height:5%;
+}
+/*center the div holding the validator links*/
+body footer div#validation-icons{
+    position:absolute;
+    left:45%;
+}
+body footer div a.validation-icon, body footer a img{
+    width:80px;
+    height:20px;
+}
