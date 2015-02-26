@@ -4,64 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title></title>
-    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/main.css" type="text/css"/>
 </head>
 <body>
     <header class="entry-header">
         <div class="inner">
-            <!--<nav class="back-link">-->
-                <!--<span><a href="http://localhost:63342/CSS_Fundamentals/Teamwork/index.html" rel="prev"><span>&larr;</span> Refresh</a></span>-->
-            <!--</nav>&lt;!&ndash; .nav-single &ndash;&gt;-->
-            <!--<button id="home-bth">Home</button>-->
-            <!--<button id="gallery-bth">Gallery</button>-->
-
-            <nav id='cssmenu'>
-                <ul>
-                    <li class='active'><a href='#' id="home-bth"><span>Home</span></a></li>
+            <nav id='cssmenu' class="clearfix">
+                <ul class="clearfix">
+                    <li class='active'><a href='index.html' id="home-bth"><span>Home</span></a></li>
                     <li><a href='#'><span>Products</span></a></li>
-                    <li><a href='#' id="gallery-bth"><span>Gallery</span></a></li>
-                    <li><a href='#'><span>Contact</span></a></li>
+                    <li><a href='gallery_page.html' id="gallery-bth"><span>Gallery</span></a></li>
+                    <li class='last'><a href='#'><span>Contact</span></a></li>
                 </ul>
+                <a href="#" id="pull">Menu</a>
             </nav>
-            <!--<nav id="small-menu">-->
-                <!--<ul>-->
-                    <!--<li><span>Menu</span>-->
-                        <!--<ul>-->
-                            <!--<li class='active'><a href='#' id="home-bth1"><span>Home</span></a></li>-->
-                            <!--<li><a href='#'><span>Products</span></a></li>-->
-                            <!--<li><a href='#' id="gallery-bth1"><span>Gallery</span></a></li>-->
-                            <!--<li><a href='#'><span>Contact</span></a></li>-->
-                        <!--</ul>-->
-                    <!--</li>-->
-                <!--</ul>-->
-            <!--</nav>-->
-
-
         </div>
+        <div class="site-nav-toggle">
+            <div class="mobile-nav-open">
+                <svg x="0px" y="0px" width="50px" height="40px" viewBox="0 0 50 40" enable-background="new 0 0 50 40" xml:space="preserve">
+                    <defs></defs>
+                    <line id="open-topLine" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4" y1="4" x2="46" y2="4"></line>
+                    <line id="open-middleLine" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4" y1="20" x2="46" y2="20"></line>
+                    <line id="open-bottomLine" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4" y1="36" x2="46" y2="36"></line>
+                </svg>
+            </div>
+
+            <div class="mobile-nav-close" style="display: none;">
+                <svg x="0px" y="0px" width="50px" height="40px" viewBox="0 0 50 40" enable-background="new 0 0 50 40" xml:space="preserve">
+                    <defs></defs>
+                    <line id="close-topLine" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="7.5" y1="4" x2="42.5" y2="36" class="topLineActive"></line>
+                    <line id="close-bottomLine" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="7.5" y1="36" x2="42.5" y2="4" class="bottomLineActive"></line>
+                </svg>
+            </div>
+        </div>
+        <nav id="navigation-mobile">
+            <ul>
+                <li><a href="index.html"><div>Home</div></a></li>
+                <li><a href="#"><div>Products</div></a></li>
+                <li><a href="gallery_page.html"> <div>Gallery</div></a></li>
+                <li><a href="#"> <div>Contacts</div></a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="gallery">
-        <section id="slide-1" class="homeSlide">
-            <div class="bcg">
-            </div>
-        </section>
-        <section id="slide-2" class="homeSlide">
-            <div class="bcg">
-            </div>
-        </section>
-        <section id="slide-3" class="homeSlide">
-            <div class="bcg">
-            </div>
-        </section>
-        <section id="slide-4" class="homeSlide">
-            <div class="bcg">
-            </div>
-        </section>
-        <section id="slide-5" class="homeSlide">
-            <div class="bcg">
-            </div>
-        </section>
-    </section>
     <section id="home-screen">
         <div>
             <h1>This is main screen</h1>
@@ -70,7 +55,8 @@
 
 
     </section>
-    <!--scroller to top-->
+
+
     <a id="scrollerToTop" href="#"></a>
 
     <footer class="entry-footer">
@@ -78,14 +64,12 @@
             <nav class="back-link">
                 <span><a href="http://localhost:63342/CSS_Fundamentals/Teamwork/index.html" rel="prev"><span>&larr;</span> Refresh</a></span>
             </nav><!-- .nav-single -->
-            <div id="validation-icons">
-            <a href="http://validator.w3.org/" target="_blank" class="validation-icon">
-                <img src="images/html-v.png" alt="HTML validation icon"/></a>
-            <a href="https://jigsaw.w3.org/css-validator/" target="_blank" class="validation-icon">
-                <img src="images/css-v.png" alt="HTML validation icon"/></a>
-        </div>
+
+            <h1 class="entry-title">TODO FOOTER</h1>
         </div>
     </footer>
+
+
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="vendor/jquery-1.9.1.min.js"><\/script>')</script>

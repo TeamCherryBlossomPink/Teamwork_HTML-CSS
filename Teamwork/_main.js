@@ -10,10 +10,12 @@
 
     $(document).ready(function () {
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 200) {
+            if ($(this).scrollTop() > 300) {
                 $('#scrollerToTop').fadeIn();
+                $('#down-arrow').fadeOut();
             } else {
                 $('#scrollerToTop').fadeOut();
+                $('#down-arrow').fadeIn();
             }
         });
 
@@ -21,55 +23,62 @@
             $('html, body').animate({ scrollTop: 0 }, 2000);
             return false;
         });
+        //Mobile menu open
+        $('.site-nav-toggle').click(function() {
+            $('#navigation-mobile').slideToggle();
+            $(this).find('div:hidden').show().siblings().hide();
+        });
+
+        // Hide mobile-menu > 768
+        $(window).resize(function() {
+            if ($(window).width() > 768) {
+                //$("#navigation-mobile").hide();
+                $("#cssmenu").show();
+                $(".site-nav-toggle").hide();
+                $("#navigation-mobile").hide();
+            }
+            if ($(window).width() < 768) {
+                //$("#navigation-mobile").show();
+                $("#cssmenu").hide();
+                $(".site-nav-toggle").show();
+            }
+
+        });
+
     });
 
-    $( document ).ready(function() {
+       $( document ).ready(function() {
         $('#cssmenu').prepend('<div id="bg-one"></div><div id="bg-two"></div><div id="bg-three"></div><div id="bg-four"></div>');
 
-        //Store the references outside the event handler:
-        var $window = $(window);
-
-        function checkWidth() {
-            var windowsize = $window.width();
-            if (windowsize < 440) {
-
-                $("#cssmenu").hide().fadeOut();
-            }else {
-                $("#cssmenu").show().fadeIn();
-            }
-        }
-        // Execute on load
-        checkWidth();
-        // Bind event listener
-        $(window).resize(checkWidth);
-
-
     });
-    $("li").click(function(){
-        // If this isn't already active
-        if (!$(this).hasClass("active")) {
-            // Remove the class from anything that is active
-            $("li.active").removeClass("active");
-            // And make this active
-            $(this).addClass("active");
-        }
-    });
+    //$("li").click(function(){
+    //    // If this isn't already active
+    //    if (!$(this).hasClass("active")) {
+    //        // Remove the class from anything that is active
+    //        $("li.active").removeClass("active");
+    //        // And make this active
+    //        $(this).addClass("active");
+    //    }
+    //});
 
 })(jQuery);
 
 $(function(){
     //$("#home-screen").hide().fadeOut();
-    $("#gallery").hide().fadeOut();
+    //$("#gallery").hide().fadeOut();
 
-    $('#gallery-bth').click(function(){
-        $("#gallery").show().fadeIn();
-        $("#home-screen").hide().fadeOut();
-        $("footer").hide().fadaOut();
 
-    });
-    $('#home-bth').click(function(){
-        $("#gallery").hide().fadeOut();
-        $("#home-screen").show().fadeIn();
-        $("footer").show().fadeIn(0);
-    });
+    //$('#gallery-bth-small-menu').click(function(){
+    //    $("#gallery").show().fadeIn();
+    //    $("#home-screen").hide().fadeOut();
+    //
+    //});
+    //$('#home-bth').click(function(){
+    //    $("#gallery").hide().fadeOut();
+    //    $("#home-screen").show().fadeIn();
+    //});
+    //$('#home-bth-small-menu').click(function(){
+    //    $("#gallery").hide().fadeOut();
+    //    $("#home-screen").show().fadeIn();
+    //});
 });
