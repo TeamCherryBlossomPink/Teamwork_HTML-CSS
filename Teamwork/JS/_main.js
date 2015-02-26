@@ -10,29 +10,6 @@
 
     $(document).ready(function () {
 
-        //print random jokes in the aside in the home page
-        var myArray = [];
-
-        myArray.push("PeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPesho");
-        myArray.push("GoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGosho");
-        myArray.push("ToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoTosho")
-        myArray.push("BatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatka")
-        myArray.push("ShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatka")
-        myArray.push("Това е тест ..Това е тест ..Това е тест ..Това е тест ..Това е тест ..Това е тест ..Това е тест ..Това е тест ..Това е тест ..")
-
-        //generate random numbers in the range 0-5
-        var randNum1 = Math.floor(Math.random() * 6);
-        do {
-            var temp = Math.floor(Math.random() * 6);
-            var randNum2 = temp;
-        } while(temp == randNum1)
-        //console.log(randNum1);
-        //console.log(randNum2);
-        $("#joke-1").text(myArray[randNum1]);
-        $("#joke-2").text(myArray[randNum2]);
-
-
-
         $(window).scroll(function () {
             if ($(this).scrollTop() > 300) {
                 $('#scrollerToTop').fadeIn();

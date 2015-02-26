@@ -4,24 +4,32 @@
         //print random jokes in the aside in the home page
         var myArray = [];
 
-        myArray.push("PeshoPeshoPeshoPeshoPesho<br/><br/>PeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPeshoPesho");
-        myArray.push("GoshoGoshooshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGoshoGosho");
-        myArray.push("ToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoToshoTosho")
-        myArray.push("BatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatkaBatka")
-        myArray.push("ShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatkaShmatka")
-        myArray.push("Това е тест ..Това е тест ..Това е тест ..Това е тест ..Това е тест ..Това е тест ..Това е тест ..Това е тест ..Това е тест ..")
+        myArray.push("Ако “дебъгване” е процесът по отстраняване на проблеми в програмния код, то тогава “програмиране” явно е процесът по вкарването им вътре. ");
+        myArray.push("Жена на програмист го праща до магазина: <br/>– Да купиш един салам и ако има яйца – 10.<br/>След малко мъжът се връща с десет салама. Жена му го пита: " +
+        "<br/>– Какви са тези салами? Защо си купил 10 салама. <br/>– Как защо?! – имаше яйца…");
+        myArray.push("Програмист се прибира в пет часа сутринта. Жена му изнервена го очаква на вратата: <br/> - Миришеш ми на чужди компютри…")
+        myArray.push("Младеж, завършил институт и постъпил на работа във фирма. На втория ден началникът го извикал и попитал: <br/> " +
+        "- Ти силен програмист ли си? <br/>- Как да ви кажа? <br/>- Е силен ли си? <br/>- В общи линии, да. <br/>- Тогава ще се заемеш с преместването на компютрите.")
+        myArray.push("Истинският програмист не може да умре от глад, дори хладилника да е празен. Той винаги може да изкара поне още една седмица с хранителните запаси натрупали се в клавиатурата.")
+        myArray.push("Въпрос: Защо програмистите не са добри в леглото? <br/>Отговор: Защото винаги търсят бързодействие! ")
+        myArray.push("Въпрос: Кое е 8 пъти по-лошо от битовия алкохолизъм? <br/>Отговор: Байтовият алкохолизъм, разбира се! ");
+        myArray.push("Един геймър умрял и го пратили в ада. След една седмица главният дявол бяга при Господ и реве: <br/>- Какъв е този, дето си ми го пратил?" +
+        "<br/>Господ недоумява. <br/>- Не мога повече! Вземаи го при теб! <br/>- Защо, бе? - пита Господ. <br/>- Как защо! Изби всички дяволи, обърна всички казани и пита къде е изхода за другото ниво! ");
+        myArray.push("Час по английски. Учителят: <br/>- Как е на английски гума?<br/>Син на програмист: <br/>- Бекспейс. ");
+        myArray.push("Програмист се разхожда в планината. Огледал заобикалящата го природа и си казал: <br/>- Каква яка графика! ")
 
-        //generate random numbers in the range 0-5
-        var randNum1 = Math.floor(Math.random() * 6);
+        //generate random numbers in the range 0-10
         do {
-            var temp = Math.floor(Math.random() * 6);
-            var randNum2 = temp;
-        } while(temp == randNum1)
-        //console.log(randNum1);
-        //console.log(randNum2);
+            var randNum1 = Math.floor(Math.random() * 10);
+            var randNum2 = Math.floor(Math.random() * 10);
+            var randNum3 = Math.floor(Math.random() * 10);
+        } while((randNum1 == randNum2) || (randNum1 == randNum3) || (randNum2 == randNum3));
+        console.log(randNum1);
+        console.log(randNum2);
+        console.log(randNum3);
         $("#joke-1").html(myArray[randNum1]);
         $("#joke-2").html(myArray[randNum2]);
-
+        $("#joke-3").html(myArray[randNum3]);
     });
 
 })(jQuery);
