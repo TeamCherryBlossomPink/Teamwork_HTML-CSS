@@ -18,18 +18,26 @@
         myArray.push("Час по английски. Учителят: <br/>- Как е на английски гума?<br/>Син на програмист: <br/>- Бекспейс. ");
         myArray.push("Програмист се разхожда в планината. Огледал заобикалящата го природа и си казал: <br/>- Каква яка графика! ")
 
-        //generate random numbers in the range 0-10
-        do {
-            var randNum1 = Math.floor(Math.random() * 10);
-            var randNum2 = Math.floor(Math.random() * 10);
-            var randNum3 = Math.floor(Math.random() * 10);
-        } while((randNum1 == randNum2) || (randNum1 == randNum3) || (randNum2 == randNum3));
-        console.log(randNum1);
-        console.log(randNum2);
-        console.log(randNum3);
-        $("#joke-1").html(myArray[randNum1]);
-        $("#joke-2").html(myArray[randNum2]);
-        $("#joke-3").html(myArray[randNum3]);
+        var intArr = [];
+        var range = 9;
+        for (var i = 0; i < range; i++) {
+            intArr.push(i + 1);
+        }
+
+        while(range > 0) {
+            var k = Math.floor(Math.random() * range);
+            range--;
+            var temp = intArr[range];
+            intArr[range] = intArr[k];
+            intArr[k] = temp;
+        }
+        //fill articles with jokes
+        for (var i = 1; i <= 4; i++) {
+            var tagName = "#joke-" + i;
+            console.log(tagName);
+            console.log(myArray[intArr[i]]);
+            $(tagName).html(myArray[intArr[i]]);
+        }
     });
 
 })(jQuery);
