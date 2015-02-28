@@ -40,6 +40,7 @@
             }
             if ($(window).width() < 768) {
                 //$("#navigation-mobile").show();
+                //$(".inner").hide();
                 $("#cssmenu").hide();
                 $(".site-nav-toggle").show();
             }
