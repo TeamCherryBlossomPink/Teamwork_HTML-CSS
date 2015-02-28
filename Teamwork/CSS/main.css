@@ -68,65 +68,6 @@ body > header {
     width: 100%;
 }
 
-/*Gallery style*/
-.bcg {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-}
-#slide-1 .bcg {
-    background-image: url("../images/bcg_slide-1.jpg");
-    background-size: contain;
-}
-#slide-2 .bcg {
-    background-image: url("../images/bcg_slide-2.jpg");
-    background-size: contain;
-}
-#slide-3 .bcg {
-    background-image: url("../images/bcg_slide-3.jpg");
-    background-size: contain;
-}
-#slide-4 .bcg {
-    background-image: url("../images/bcg_slide-4.jpg");
-    background-size: contain;
-}
-#slide-5 .bcg {
-    background-image: url("../images/bcg_slide-5.jpg");
-    background-size: contain;
-}
-
-
-#scrollerToTop {
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    background: url("../images/uparrow.png") 0 0;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    z-index: 999999;
-    display: none;
-}
-
-#down-arrow {
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 10px;
-    right: 50%;
-    background: url("../images/down-arrow.png") 0 0;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    z-index: 999999;
-    /*display: none;*/
-}
 
 /* Navigation menu*/
 
@@ -750,6 +691,9 @@ section.main div img {
 @media only screen and (max-width: 400px){
     section.links:nth-of-type(4) {
         margin-left: 9%;
+    }
+    section.btns.links {
+        margin-left: 24%;
     }
 }
 
