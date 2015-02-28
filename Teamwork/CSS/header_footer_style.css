@@ -1,14 +1,14 @@
 /*HEADER AND FOOTER */
 
 body > header {
-    margin: 0px 5px 0 5px;
+    margin: 0px 5px 10px 0px;
     height: 100px;
     width: 100%;
 }
 .entry-header {
     padding-top: 0px;
     width:100%;
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
     /*z-index: 9000*/
