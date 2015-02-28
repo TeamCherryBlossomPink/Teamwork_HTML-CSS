@@ -1,0 +1,152 @@
+/*team page style*/
+#content-wrapper {
+    margin-bottom: 3em;
+}
+.team-wrapper {
+    width: 100%;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    justify-content: space-between;
+    /*padding: 1em;*/
+    /*border: 1px solid;*/
+}
+.person-container {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*padding: 1em;*/
+    /*border: 1px solid;*/
+}
+
+.info-card-layout {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    flex-basis: auto;
+
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    /*padding: 1em;*/
+    background-color: #eaeaea;
+    border-radius: 5px;
+    margin: 0.5em;
+}
+.info-card-layout > h1 {
+    height: 3em;
+    background-color: #c8514d;
+    line-height: 3em;
+    font-size: 1.2em;
+    color: #ffffff;
+    padding-left: 1em;
+    border-radius: 5px 5px 0 0;
+}
+.person-info {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1em;
+
+}
+.person-pic {
+    width: 180px;
+    height: 120px;
+    border: 0.3em solid #ffffff;
+}
+.person-pic img {
+    width: 100%;
+    height: 100%;
+}
+.person-text {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    margin-left: 1em;
+}
+.person-text h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.logo-container {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.logo-divs {
+    width: 40px;
+    height: 40px;
+    margin-right: 1em;
+    /*margin-right: 10px;*/
+    /*margin-top: 15px;*/
+}
+.logo-divs img {
+    width: 100%;
+}
