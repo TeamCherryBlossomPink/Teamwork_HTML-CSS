@@ -25,7 +25,7 @@
         myArray.push("-Тате тате ти бил ли си програмист?<br/>-Да бил съм трима!");
 
         var intArr = [];
-        var range = 12;
+        var range = 13;
         for (var i = 0; i < range; i++) {
             intArr.push(i + 1);
         }
