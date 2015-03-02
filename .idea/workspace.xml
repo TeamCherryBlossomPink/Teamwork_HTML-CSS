@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1506684-ea56-48a9-b26a-766d1b5a7b31" name="Default" comment="" />
+    <list default="true" id="a1506684-ea56-48a9-b26a-766d1b5a7b31" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Teamwork/CSS/video.css" afterPath="$PROJECT_DIR$/Teamwork/CSS/video.css" />
+    </list>
     <ignored path="Teamwork_HTML-CSS.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +49,8 @@
       <file leaf-file-name="video.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Teamwork/CSS/video.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33456334" vertical-offset="0" max-vertical-offset="813">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.37638375" vertical-offset="0" max-vertical-offset="813">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -521,8 +523,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Teamwork/CSS/video.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33456334" vertical-offset="0" max-vertical-offset="813">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.37638375" vertical-offset="0" max-vertical-offset="813">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding />
         </state>
       </provider>
