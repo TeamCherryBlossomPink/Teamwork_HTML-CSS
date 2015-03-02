@@ -14,10 +14,10 @@ textarea{
     margin-top:4em;
     height:600px;
     font-size: 1.2em;
-    border: 1px solid #b8b8b8;
     border-radius: 1em 0 0 1em;
     background-color: #eeeeee;
     padding: 1em;
+    resize:none;
     /*background-color: #234465;*/
 }
 section.main{
