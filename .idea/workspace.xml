@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1506684-ea56-48a9-b26a-766d1b5a7b31" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Teamwork/CSS/video.css" afterPath="$PROJECT_DIR$/Teamwork/CSS/video.css" />
-    </list>
+    <list default="true" id="a1506684-ea56-48a9-b26a-766d1b5a7b31" name="Default" comment="" />
     <ignored path="Teamwork_HTML-CSS.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
