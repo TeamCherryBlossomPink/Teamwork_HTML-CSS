@@ -27,7 +27,7 @@
             <br/>-Можеш ли да ми заемеш 1000лв <br/>-Не може ли да ги закръглим на 1024?");
 
         var intArr = [];
-        var range = 15;
+        var range = 13;
         for (var i = 0; i < range; i++) {
             intArr.push(i + 1);
         }
