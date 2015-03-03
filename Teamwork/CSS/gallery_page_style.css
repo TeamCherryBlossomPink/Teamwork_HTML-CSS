@@ -53,7 +53,14 @@ body {
     background-image: url("../images/pictures/picture11.png");
     background-size: contain;
 }
-
+#slide-9 .bcg {
+    background-image: url("../images/pictures/picture18.jpg");
+    background-size: contain;
+}
+#slide-10 .bcg {
+    background-image: url("../images/pictures/picture19.jpg");
+    background-size: contain;
+}
 
 
 #down-arrow {
