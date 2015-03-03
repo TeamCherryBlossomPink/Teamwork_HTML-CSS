@@ -1,5 +1,7 @@
 /*HEADER AND FOOTER */
 
+
+/*header style*/
 body > header {
     margin: 0px 5px 10px 0px;
     margin: 0 auto;
@@ -41,8 +43,7 @@ body > header {
 }
 
 
-
-
+/*header navigation*/
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,

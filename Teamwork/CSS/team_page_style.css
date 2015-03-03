@@ -5,9 +5,9 @@ body{
 #content-wrapper {
     margin-bottom: 8.5em;
 }
-.team-wrapper {
+section.team-wrapper {
     width: 97%;
-    margin: 0 auto;
+    margin: 20px auto;
     display: -webkit-flex;
     display: -webkit-box;
     display: -moz-box;
@@ -24,7 +24,7 @@ body{
 
     justify-content: space-between;
 }
-#team-info {
+section.team-wrapper div#team-info {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;

@@ -65,22 +65,3 @@
 
 })(jQuery);
 
-$(function(){
-    //$("#home-screen").hide().fadeOut();
-    //$("#gallery").hide().fadeOut();
-
-
-    //$('#gallery-bth-small-menu').click(function(){
-    //    $("#gallery").show().fadeIn();
-    //    $("#home-screen").hide().fadeOut();
-    //
-    //});
-    //$('#home-bth').click(function(){
-    //    $("#gallery").hide().fadeOut();
-    //    $("#home-screen").show().fadeIn();
-    //});
-    //$('#home-bth-small-menu').click(function(){
-    //    $("#gallery").hide().fadeOut();
-    //    $("#home-screen").show().fadeIn();
-    //});
-});
