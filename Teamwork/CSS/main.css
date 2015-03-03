@@ -376,4 +376,9 @@ section.main div img {
     background-image: url(../images/010.jpg);
 
 }
+#homedivsection{
+    width: 700px;
+    background-color: #ddd;
+    border: none;
+}
 
