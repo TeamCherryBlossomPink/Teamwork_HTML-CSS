@@ -1,15 +1,18 @@
 /*Gallery style*/
 body {
+    width: 98%;
+    margin: 0 auto;
     background-color: #000000;
     margin-top: 120px;
+
 }
 /*make header fixed just for the gallery_page*/
-.entry-header {
+header.entry-header {
     padding-top: 0px;
-    width:100%;
+    width:99%;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 5px;
     /*z-index: 9000*/
 }
 /*image container*/
@@ -70,7 +73,7 @@ body {
     text-align: center;
     position: fixed;
     bottom: 10px;
-    right: 50%;
+    left: 48%;
     background: url("../images/down-arrow.png") 0 0;
     background-repeat: no-repeat;
     background-size: 100%;
