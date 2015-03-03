@@ -97,11 +97,15 @@ html {
 
 #navigation-mobile {
     display: none;
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
+    left: 0;
+    top: 1.5em;
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
     margin-top: 3.5em;
+    z-index: 9999;
 }
 #navigation-mobile .bg-lang {
     display: none;
