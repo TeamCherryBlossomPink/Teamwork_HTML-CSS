@@ -136,7 +136,7 @@ div>h1{
 #cssmenu ul li a {
     height: 10px;
     border: 2px solid black;
-    padding: 24px 30px 20px 30px;
+    padding: 24px 24px 20px 24px;
     border-radius: 5em 1em 5em 1em;
     color: #494949;
     font-size: 22px;
