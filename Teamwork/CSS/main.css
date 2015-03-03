@@ -292,6 +292,14 @@ section.main div img {
         height: 15px;
     }
 
+
+    /*change header height*/
+    body > header.entry-header {
+        height: 50px;
+    }
+
+
+
     .team-wrapper {
         zoom: 0.9;
         -moz-transform: scale(0.9);
