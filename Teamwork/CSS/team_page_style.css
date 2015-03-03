@@ -1,4 +1,7 @@
 /*team page style*/
+body{
+    background-color: #ddd;
+}
 #content-wrapper {
     margin-bottom: 8.5em;
 }
