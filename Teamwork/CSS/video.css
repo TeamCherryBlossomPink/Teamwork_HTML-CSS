@@ -1,9 +1,11 @@
 body{
     background-color: #272727;
 }
-.video{
-    /*border:1px solid black;*/
+div.video{
+    /*border:2px solid #fff;*/
     margin-bottom:2em;
+    background-color: #eeeeee;
+    border-radius: 3px;
 }
 video{
     width:100%;
@@ -17,6 +19,7 @@ textarea{
     background-color: #eeeeee;
     padding: 1em;
     resize:none;
+    border-radius: 3px;
     /*background-color: #234465;*/
 }
 section.main{
