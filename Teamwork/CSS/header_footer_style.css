@@ -61,7 +61,6 @@ body > header {
     padding-bottom: 4px;
     margin-left: 1em;
     margin-top: 3em;
-    margin-right: 0.5em;
 }
 #cssmenu .bg-lang {
     display: none;
@@ -150,6 +149,9 @@ body > header {
 #cssmenu ul li:hover  .bg-lang, #navigation-mobile ul li:hover .bg-lang {
     display: block;
     font-weight: bold;
+}
+.inner nav #cssmenu{
+    margin-right: 0.5em;
 }
 
 
