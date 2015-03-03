@@ -31,7 +31,7 @@
 
 
         var intArr = [];
-        var range = 18;
+        var range = 17;
         for (var i = 0; i < range; i++) {
             intArr.push(i + 1);
         }
