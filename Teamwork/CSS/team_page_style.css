@@ -6,7 +6,8 @@ body{
     margin-bottom: 8.5em;
 }
 .team-wrapper {
-    width: 100%;
+    width: 97%;
+    margin: 0 auto;
     display: -webkit-flex;
     display: -webkit-box;
     display: -moz-box;
