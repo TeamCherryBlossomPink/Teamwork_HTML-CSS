@@ -275,6 +275,7 @@ section.main div img {
     }
     nav#cssmenu {
         width: 82%;
+        font-size: 0.9em;
     }
 
     /*footer*/
